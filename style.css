@@ -24,19 +24,19 @@
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
-/* * {
+* {
     scrollbar-width: auto;
     scrollbar-color: #8f54a0 #ffffff;
-} */
+}
 
 body,
 html {
-    /* overflow-y: overlay; */
+    overflow-y: overlay;
     overflow-x: hidden;
 }
 
 /* Chrome, Edge, and Safari */
-/* *::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 16px;
 }
 
@@ -51,7 +51,7 @@ html {
 
 .active-scrollbar ::-webkit-scrollbar-thumb {
     background-color: #333333;
-} */
+} 
 
 body,
 html {
@@ -93,6 +93,7 @@ a {
     border: 3px solid #5552F1;
     border-radius: 50%;
     pointer-events: none;
+    z-index: 10000;
 }
 
 /* global styles */
@@ -235,6 +236,7 @@ input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    height: 100vh;
 }
 
 #brand-top {
@@ -659,7 +661,18 @@ input[type="submit"]:hover {
     color: #5552F1;
 }
 
-body {
+.js-cont {
+    position: relative;
     width: 100%;
-    height: 700vh;
+    height: 100%;
+}
+
+.js-scroll {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    will-change: transform;
 }
