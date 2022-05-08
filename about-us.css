@@ -3,11 +3,6 @@ body {
     transition: all 0.5s;
 }
 
-.active {
-    color: #5552F1 !important;
-    font-weight: 600;
-}
-
 @font-face {
     font-family: 'jakarta';
     src: url(./assets/fonts/PlusJakartaSans-Regular.woff) format('woff');
@@ -37,7 +32,6 @@ body {
 * {
     scrollbar-width: auto;
     scrollbar-color: #8f54a0 #ffffff;
-    box-sizing: border-box;
 }
 
 body,
@@ -104,14 +98,10 @@ a {
     border: 3px solid #5552F1;
     border-radius: 50%;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 /* global styles */
-.navbar-toggler {
-    padding: 0;
-}
-
 .navbar-light .navbar-toggler {
     border: none;
 }
@@ -151,40 +141,21 @@ img {
     color: #5552F1;
 }
 
-.section-heading {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60.91px;
-    line-height: 73px;
-    letter-spacing: 0.03em;
-    margin-bottom: 100px;
-}
-
 .blue-text {
     color: #5552F1;
-}
-
-.overlay {
-    position: absolute;
-    z-index: -1;
-    bottom: 1460px;
-}
-
-.overlay svg rect {
-    stroke: #5552F1;
 }
 
 input[type="button"],
 input[type="submit"] {
     color: #F7F7F7;
-    height: 65px;
+    height: 76px;
     padding: 0 70px;
     outline: none;
     border: 1px solid #5552F1;
     border-radius: 40px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 28px;
     background-image: linear-gradient(to right, #181818 0%, #181818 50%, #5552F1 50%, #5552F1 100%);
     background-repeat: no-repeat;
@@ -197,6 +168,129 @@ input[type="button"]:hover,
 input[type="submit"]:hover {
     color: #5552F1;
     background-position: 0 0;
+}
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay svg rect {
+    stroke: #5552F1;
+}
+
+.left {
+    left: 0;
+    top: 50vh;
+}
+
+.right {
+    right: 0;
+    top: 0;
+}
+
+.bg-grey {
+    background: #181818;
+    width: 1489px;
+    height: 755px;
+    border-radius: 200px;
+    top: 150px;
+    z-index: -2;
+}
+
+.section-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65.91px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.inner-heading {
+    font-size: 28px;
+    font-weight: 400;
+    color: #9090909c;
+    margin-bottom: 40px;
+}
+
+.description {
+    font-family: 'jakarta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.inner-heading {
+    letter-spacing: 1px;
+}
+
+.blue-line div {
+    position: relative;
+    background: #5552F1;
+    height: 2px;
+}
+
+.active {
+    color: #5552F1 !important;
+    font-weight: 600;
+}
+
+/* about section */
+#about {
+    margin-bottom: 120px;
+}
+
+#about .section-heading {
+    margin-bottom: 360px;
+    text-align: center;
+    letter-spacing: 20px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+#about .outer-wrap {
+    background-position: left center;
+}
+
+#about .inner-wrap {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 650px;
+}
+
+#about .left {
+    flex-basis: 40%;
+    height: 650px;
+}
+
+#about .right {
+    flex-basis: 614px;
+    text-align: justify;
+}
+
+#about .description.one,
+#about .description.two {
+    margin-bottom: 20px;
+}
+
+#about .blue-line {
+    right: 0;
+    width: 740px;
+}
+
+#about .blue-line div {
+    top: -60px;
+}
+
+#about .left {
+    background: url(./assets/img/about-us.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .bg-dark {
@@ -330,120 +424,10 @@ input[type="submit"]:hover {
     color: #5552F1;
 }
 
-/* hero section */
-#hero {
-    display: flex;
-}
-
-/* services section */
-#services {
-    margin-top: 80px;
-    margin-bottom: 160px;
-}
-
-#services .heading-wrap {
-    text-align: center;
-}
-
-#services .description {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 35px;
-    color: #d7d7d7;
-}
-
-#services .card-wrap {
-    margin-top: 100px;
-}
-
-#services #wolf-form {
-    background: #242424;
-    height: max-content;
-    padding: 50px 60px 70px;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom, #181818 97%, #5552F1 3%);
-    font-size: 22px;
-    /* width: 1187px; */
-    margin: 0 auto;
-    box-shadow: 0px 2px 70px rgb(0 0 0 / 55%);
-}
-
-#services .features {
-    margin-bottom: 60px;
-}
-
-input {
-    outline: none !important;
-    border: none;
-    margin-bottom: 30px;
-}
-
-#services .card-item li {
-    color: #909090;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    font-size: 21px;
-    width: 500px;
-}
-
-#services .card-item ul {
-    padding-left: 25px;
-}
-
-#services .card-item {
-    flex-basis: 45%;
-}
-
-#services .input-wrap {
-    flex-basis: 50%;
-    text-align: center;
-}
-
-#services .card-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-#services .card-item .heading {
-    color: #D9D9D9;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-/* wolf form */
-#wolf-form input {
-    display: block;
-}
-
-input[type="text"] {
-    width: 100%;
-    background: #000;
-    border-radius: 5px;
-    height: 50px;
-    padding: 0 10px;
-    color: #d7d7d7;
-    border: 1px solid #000 !important;
-    transition: all .3s;
-}
-
-input[type="text"]:focus {
-    border: 1px solid #5552F1 !important;
-}
-
-::placeholder {
-    color: #555;
-}
-
-input[type="submit"] {
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
 /* footer section */
 #footer {
     background: #f7f7f7;
-    height: max-content;
+    height: 180px;
     padding: 60px 0;
 }
 
@@ -532,25 +516,4 @@ input[type="submit"] {
     overflow: hidden;
     width: 100%;
     will-change: transform;
-}
-
-.detail-features {
-    margin-top: 100px;
-}
-
-.detail-features ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    font-size: 21px;
-    color: #909090;
-    width: 100%;
-    padding-left: 25px;
-}
-
-.detail-features .heading {
-    font-size: 26px;
-    color: #d7d7d7;
-    margin-bottom: 30px;
 }

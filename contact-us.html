@@ -32,7 +32,7 @@
             <section id="navbar" class="">
                 <nav class="navbar navbar-lg" id="navbar-wrap" data-aos="fade-down">
 
-                    <a class="navbar-brand brand focus" href="#top">
+                    <a class="navbar-brand brand focus" href="/">
                         <img src="./assets/img/brand-logo.svg" alt="Wolf Finance" srcset="">
                     </a>
 
@@ -49,16 +49,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item focus">
-                                <a class="nav-link" href="#">Home</a>
+                                <a id="home-link" class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item focus">
-                                <a class="nav-link" href="#">About</a>
+                                <a id="about-link" class="nav-link" href="/about-us.html">About</a>
                             </li>
                             <li class="nav-item focus">
-                                <a class="nav-link" href="#">Services</a>
+                                <a id="services-link" href="/services.html" class="nav-link">Services</a>
                             </li>
                             <li class="nav-item focus">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link-item active" href="javascript:void(0)">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@
                                 <input type="text" name="name" placeholder="Name">
                                 <input type="text" name="email" placeholder="Email" required>
                                 <input type="text" name="phone" placeholder="Phone">
-                                <input hidden type="text" name="service" value="Pack of Wolves">
+                                <input hidden type="text" name="service" value="Contact Us Lead">
                                 <input type="submit" value="Register Now!">
                             </form>
                         </div>
@@ -103,7 +103,7 @@
             <!-- footer section -->
             <section id="footer">
                 <div class="footer-wrap">
-                    <a href="#" class="brand">
+                    <a href="/" class="brand">
                         <svg width="123" height="39" viewBox="0 0 123 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_207_139)">
                                 <path d="M62.2768 0.279297V0.819263C61.6537 0.819263 60.7862 1.54591 60.4196 2.48131L56.126 17.0423H54.8177L50.0593 4.90012L46.509 17.0423H45.4471L39.5768 2.44719C39.2181 1.4897 38.4047 0.825285 38 0.825285V0.279297H44.2631V0.819263C43.8042 0.819263 43.0189 1.52383 43.5057 2.90686L47.2343 11.9076L50.45 0.2813H52.3934L56.8974 11.9237L59.6262 2.56562C59.9608 1.58605 59.3657 0.821267 58.8107 0.821267V0.2813H62.2849L62.2768 0.279297Z" fill="#F7F7F7" />
@@ -128,12 +128,12 @@
                         </svg>
                     </a>
                     <div class="nav-links">
-                        <a href="#" class="nav-link-item">Home</a>
-                        <a href="#" class="nav-link-item">About</a>
-                        <a href="#" class="nav-link-item">Services</a>
+                        <a id="home-footer-link" class="nav-link-item nav-link" href="/">Home</a>
+                        <a id="about-footer-link" class="nav-link-item nav-link" href="/about-us.html">About</a>
+                        <a id="services-footer-link" class="nav-link-item nav-link" href="/services.html">Services</a>
                     </div>
                     <div class="contact-wrap">
-                        <p class="heading">Contact Us</p>
+                        <p id="contact-footer-link" class="heading nav-link-item">Contact Us</p>
                         <a href="mailto:connect@wolffinance.in" class="mail">connect@wolffinance.in</a>
                         <a href="#" class="instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -143,7 +143,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
 
@@ -167,7 +166,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
     <!-- user js -->
-    <script src="./services.js"></script>
+    <script src="./contact-us.js"></script>
 
 </body>
 

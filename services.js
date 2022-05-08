@@ -1,51 +1,30 @@
 // hamburger menu icon animation
 $(document).ready(function () {
-    $('#nav-hamburger').click(function () {
-        $(this).toggleClass('open');
+    $("#nav-hamburger").click(function () {
+        $(this).toggleClass("open");
     });
 });
+
 // navbar toggler
 let navItem = document.getElementsByClassName("nav-item");
 for (let i = 0; i < navItem.length; i++) {
-    navItem[i].addEventListener('click', () => {
+    navItem[i].addEventListener("click", () => {
         if (parseInt(window.innerWidth) > 0) {
             document.getElementById("nav-hamburger").classList.remove("open");
             document.getElementById("hamburger-wrap").click();
         }
-    })
+    });
 }
 
 function setTranslate(yPos, el) {
     el.style.backgroundPosition = `0px ${yPos - 100}px`;
 }
 
-var aboutImg = document.querySelector("#about-img");
-var tradingImg = document.querySelector("#trading-img");
-var ctaImg = document.querySelector("#cta");
-
-// var xScrollPosition;
-// var yScrollPosition;
-
-// function scrollLoop() {
-//     xScrollPosition = window.scrollX;
-//     yScrollPosition = window.scrollY;
-//     // console.log("scroll:", xScrollPosition, yScrollPosition)
-
-//     setTranslate((yScrollPosition * 0.2) - 300, aboutImg);
-//     setTranslate((yScrollPosition * 0.2) - 800, tradingImg);
-//     setTranslate((yScrollPosition * 0.2) - 1000, ctaImg);
-
-//     window.requestAnimationFrame(scrollLoop);
-// }
-// scrollLoop();
-
-
-document.addEventListener('mousemove', (e) => {
+document.addEventListener("mousemove", (e) => {
     if (e.clientX > window.innerWidth - 20) {
-        document.querySelector('html').classList.add('active-scrollbar');
-    }
-    else {
-        document.querySelector('html').classList.remove('active-scrollbar');
+        document.querySelector("html").classList.add("active-scrollbar");
+    } else {
+        document.querySelector("html").classList.remove("active-scrollbar");
     }
 });
 
@@ -59,13 +38,12 @@ const speed2 = 0.35;
 const xSet = gsap.quickSetter(ball, "x", "px");
 const ySet = gsap.quickSetter(ball, "y", "px");
 
-window.addEventListener("mousemove", e => {
+window.addEventListener("mousemove", (e) => {
     mouse.x = e.x;
     mouse.y = e.y;
 });
 
 gsap.ticker.add(() => {
-
     // adjust speed2 for higher refresh monitors
     const dt = 1.0 - Math.pow(1.0 - speed2, gsap.ticker.deltaRatio());
 
@@ -76,9 +54,9 @@ gsap.ticker.add(() => {
 });
 
 let body = document.body,
-    jsScroll = document.getElementsByClassName('js-scroll')[0],
+    jsScroll = document.getElementsByClassName("js-scroll")[0],
     height = jsScroll.getBoundingClientRect().height - 1,
-    speed = 0.05
+    speed = 0.05;
 
 var offset = 0;
 
@@ -97,3 +75,24 @@ function smoothScroll() {
 }
 
 smoothScroll();
+
+// page transition
+let about = document.querySelectorAll(".nav-link");
+
+for (let i = 0; i < about.length; i++) {
+    about[i].addEventListener("click", () => {
+        document.body.style.opacity = "0";
+        // document.location = "./";
+    });
+}
+
+document.getElementById('service-nav').addEventListener('click', () => {
+    scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+window.onload = () => {
+    document.body.style.opacity = "1";
+};

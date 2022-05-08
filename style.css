@@ -1,3 +1,8 @@
+body {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
 @font-face {
     font-family: 'jakarta';
     src: url(./assets/fonts/PlusJakartaSans-Regular.woff) format('woff');
@@ -313,7 +318,6 @@ input[type="submit"]:hover {
 }
 
 /* about section */
-
 #about .section-heading {
     margin-bottom: 360px;
     text-align: center;
