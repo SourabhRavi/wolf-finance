@@ -1,10 +1,19 @@
-// hero section height equal to screen height
-window.addEventListener('resize', () => {
-    var hero = document.querySelector('#hero');
-    var heroHeight = window.innerHeight;
-    hero.style.height = heroHeight + 'px';
+// hamburger menu icon animation
+$(document).ready(function () {
+    $('#nav-hamburger').click(function () {
+        $(this).toggleClass('open');
+    });
 });
-
+// navbar toggler
+let navItem = document.getElementsByClassName("nav-item");
+for (let i = 0; i < navItem.length; i++) {
+    navItem[i].addEventListener('click', () => {
+        if (parseInt(window.innerWidth) > 0) {
+            document.getElementById("nav-hamburger").classList.remove("open");
+            document.getElementById("hamburger-wrap").click();
+        }
+    })
+}
 
 function setTranslate(yPos, el) {
     el.style.backgroundPosition = `0px ${yPos - 100}px`;
@@ -66,7 +75,7 @@ gsap.ticker.add(() => {
     ySet(pos.y);
 });
 
-const body = document.body,
+let body = document.body,
     jsScroll = document.getElementsByClassName('js-scroll')[0],
     height = jsScroll.getBoundingClientRect().height - 1,
     speed = 0.05
@@ -80,13 +89,11 @@ function smoothScroll() {
     var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
     jsScroll.style.transform = scroll1;
 
-    setTranslate((offset * 0.2) - 300, aboutImg);
-    setTranslate((offset * 0.2) - 800, tradingImg);
-    setTranslate((offset * 0.2) - 1000, ctaImg);
+    // setTranslate((offset * 0.2) - 300, aboutImg);
+    // setTranslate((offset * 0.2) - 800, tradingImg);
+    // setTranslate((offset * 0.2) - 1000, ctaImg);
     console.log(offset);
     raf = requestAnimationFrame(smoothScroll);
 }
 
 smoothScroll();
-
-

@@ -51,7 +51,7 @@ html {
 
 .active-scrollbar ::-webkit-scrollbar-thumb {
     background-color: #333333;
-} 
+}
 
 body,
 html {
@@ -176,7 +176,7 @@ input[type="submit"]:hover {
 
 .left {
     left: 0;
-    bottom: 0;
+    top: 50vh;
 }
 
 .right {
@@ -420,7 +420,9 @@ input[type="submit"]:hover {
 /* stock-market section */
 #stock-market {
     margin-top: 200px;
-    margin-bottom: 350px;
+    padding-bottom: 350px;
+    background: url("./assets/img/left-ellipse.svg") no-repeat;
+    background-position: left bottom;
 }
 
 #stock-market .section-heading {

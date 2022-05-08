@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolf Finance</title>
+    <title>Wolf Finance | Contact Us</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -14,8 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <!-- user css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./services.css">
 
 </head>
 
@@ -24,186 +27,78 @@
     <div id="circle"></div>
     <div class="js-cont">
         <div class="js-scroll">
-            <!-- hero section -->
-            <section id="hero">
-                <div class="overlay right">
-                    <svg width="567" height="567" viewBox="0 0 567 567" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="-38.1637" y="116.307" width="862.163" height="501.693" rx="250.846" transform="rotate(-14.9536 -38.1637 116.307)" stroke="#56D6FF" stroke-width="3" />
-                        <rect x="52.3919" y="166.813" width="713.251" height="357.368" rx="178.684" transform="rotate(-14.9536 52.3919 166.813)" stroke="#56D6FF" stroke-width="3" />
-                        <rect x="143.027" y="207.257" width="558.994" height="232.445" rx="116.222" transform="rotate(-14.9536 143.027 207.257)" stroke="#56D6FF" stroke-width="3" />
-                    </svg>
-                </div>
-                <!-- <div class="overlay bg-grey">
-                        </div> -->
-                <div id="brand-top" class="brand">
-                    <img src="./assets/img/brand-logo.svg" alt="Wolf Finance">
-                </div>
-                <div id="heading-wrap">
-                    <p class="heading">EAT. SLEEP.<br><span class="blue-text game" id="trade">TRADE.</span>REPEAT.</p>
-                    <input type="button" class="" value="Register Now">
-                </div>
-                <div id="navbar-bottom">
-                    <div class="nav-item">
-                        <a href="#" class="active">Home</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#about">About</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#services">Services</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="./contact-us.html">Contact Us</a>
-                    </div>
-                </div>
-                <div class="overlay left">
-                    <svg width="505" height="536" fill="none" viewBox="0 0 505 536" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_268_13)">
-                            <rect x="-333.164" y="171.196" width="791.978" height="411.992" rx="205.996" transform="rotate(-14.9536 -333.164 171.196)" stroke="#56D6FF" stroke-width="3" />
-                            <rect x="-249.746" y="202.251" width="646.818" height="308.937" rx="154.468" transform="rotate(-14.9536 -249.746 202.251)" stroke="#56D6FF" stroke-width="3" />
-                            <rect x="-167.486" y="237.946" width="506.292" height="197.512" rx="98.7559" transform="rotate(-14.9536 -167.486 237.946)" stroke="#56D6FF" stroke-width="3" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_268_13">
-                                <rect width="505" height="536" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-            </section>
 
-            <!-- about section -->
-            <section id="about">
-                <p class="section-heading">WHAT <span class="blue-text">WE</span> DO</p>
-                <div class="outer-wrap">
-                    <div class="inner-wrap">
-                        <div class="left" id="about-img"></div>
-                        <div class="right">
-                            <p class="inner-heading">What We Do</p>
-                            <div class="blue-line overlay">
-                                <div></div>
-                            </div>
-                            <div class="content-wrap">
-                                <p class="description one">
-                                    Incorporated in 2015, Wolf Finance is your trusted partner when it comes to managing your stock trading portfolio. By joining the pack of wolves at Wolf Finance you are exposed to a wide range of opportunities that can assist you in earning great profits on your stock trades.
-                                </p>
-                                <p class="description two">
-                                    At Wolf Finance, we care for you and that is why our technical analysis experts provide you with accurate trading calls on intraday as well as derivatives trading. Guess what? All of these and many other opportunities are available at no added cost just by opening a trading account and registering with us.
-                                </p>
-                                <p class="description founder-name">
-                                    Founder: Jay Zala
-                                </p>
-                                <p class="description contact">
-                                    jay@linkedin.co.in
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- navbar section -->
+            <section id="navbar" class="">
+                <nav class="navbar navbar-lg" id="navbar-wrap" data-aos="fade-down">
 
-            <!-- trading section -->
-            <section id="trading">
-                <p class="section-heading">WHAT IS <span class="blue-text">TRADING</span></p>
-                <div class="outer-wrap">
-                    <div class="inner-wrap">
-                        <div class="left">
-                            <p class="inner-heading">What is Trading</p>
-                            <div class="blue-line overlay">
-                                <div></div>
-                            </div>
-                            <div class="content-wrap">
-                                <p class="description one">
-                                    Trading in simple words is ‘buy swiftly and sell rapidly’. A trader is someone who buys and sells a stock in very little time. When you join the pack your trading journey is streamlined by the advice of our experts. Our wolf training course specially designed for newcomers and beginners assists you to become dextrous at the art of trading.
-                                </p>
-                                <p class="description two">
-                                    If you are a newbie and aiming to join the bandwagon of the Indian stock markets through trading then the Wolf Training Programme is made for you. To become wakeful as a wolf at trading, join the wolf training programme today!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="right" id="trading-img">
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <a class="navbar-brand brand focus" href="#top">
+                        <img src="./assets/img/brand-logo.svg" alt="Wolf Finance" srcset="">
+                    </a>
 
-            <!-- stock-market section -->
-            <section id="stock-market">
-                <div class="inner-wrap">
-                    <div class="heading-wrap">
-                        <p class="section-heading">THE <span class="blue-text">INDIAN</span> STOCK MARKET</p>
+                    <button id="hamburger-wrap" class="navbar-toggler collapsed focus" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="nav-hamburger" class="nav-hamburger">
+                            <div class="wrap">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item focus">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item focus">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item focus">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item focus">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="card-wrap">
-                        <div class="card-item">
-                            <div class="text-wrap">
-                                <p class="heading">4 Cr</p>
-                                <p class="description">Active Demat Accounts</p>
-                            </div>
-                        </div>
-                        <div class="card-item">
-                            <div class="text-wrap">
-                                <p class="heading">1875</p>
-                                <p class="description">Established</p>
-                            </div>
-                        </div>
-                        <div class="card-item">
-                            <div class="text-wrap">
-                                <p class="heading">$3.21 Bn</p>
-                                <p class="description">Market Cap</p>
-                            </div>
-                        </div>
-                        <div class="card-item">
-                            <div class="text-wrap">
-                                <p class="heading">7400+</p>
-                                <p class="description">Companies Listed in NSE</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- cta section  -->
-            <section id="cta">
-                <div class="inner-wrap">
-                    <div class="content-wrap">
-                        <p class="heading one">Grab the opportunity</p>
-                        <p class="heading two">Open a Free Demat Account Today!</p>
-                        <input type="button" class="" value="Get Started">
-                    </div>
-                </div>
+                </nav>
             </section>
 
             <!-- services section  -->
             <section id="services">
                 <div class="inner-wrap">
                     <div class="heading-wrap">
-                        <p class="section-heading"><span class="blue-text">SERVICES</span> WE OFFER</p>
-                        <p class="description">Choose your plan and get started.</p>
+                        <p class="section-heading"><span class="blue-text">CONTACT</span> US</p>
+                        <p class="description">Send us your details and one of our experts will contact you shortly!</p>
                     </div>
                     <div class="card-wrap">
-                        <div class="card-item">
-                            <p class="heading">Join The Pack of Wolves</p>
-                            <ul class="features">
-                                <li>Free demat accounts with all leading brokerage firms like Zerodha, Upstox, and Angel Broking</li>
-                                <li>Free daily intraday and derivatives trading recommendations</li>
-                                <li>Free trading calls by experts daily</li>
-                                <li>No Hidden Expenses</li>
-                            </ul>
-                            <input type="button" value="Read More">
-                        </div>
-                        <div class="card-item">
-                            <p class="heading">Wolf Training</p>
-                            <ul class="features">
-                                <li>To assist you in becoming an expert at the game of trading</li>
-                                <li>Training by industry-leading experts</li>
-                                <li>Become an expert at equity and derivatives trading</li>
-                                <li>Specially developed modules for beginners</li>
-                            </ul>
-                            <input type="button" value="Read More">
+                        <div class="input-wrap">
+                            <form id="wolf-form">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="email" placeholder="Email" required>
+                                <input type="text" name="phone" placeholder="Phone">
+                                <input hidden type="text" name="service" value="Pack of Wolves">
+                                <input type="submit" value="Register Now!">
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="overlay left">
+                <svg width="505" height="536" fill="none" viewBox="0 0 505 536" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_268_13)">
+                        <rect x="-333.164" y="171.196" width="791.978" height="411.992" rx="205.996" transform="rotate(-14.9536 -333.164 171.196)" stroke="#56D6FF" stroke-width="3" />
+                        <rect x="-249.746" y="202.251" width="646.818" height="308.937" rx="154.468" transform="rotate(-14.9536 -249.746 202.251)" stroke="#56D6FF" stroke-width="3" />
+                        <rect x="-167.486" y="237.946" width="506.292" height="197.512" rx="98.7559" transform="rotate(-14.9536 -167.486 237.946)" stroke="#56D6FF" stroke-width="3" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_268_13">
+                            <rect width="505" height="536" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
 
             <!-- footer section -->
             <section id="footer">
@@ -252,11 +147,27 @@
         </div>
     </div>
 
+    <style>
+        #services .input-wrap {
+            flex-basis: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        input[type="submit"] {
+            margin: 50px auto 0;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
     <!-- user js -->
-    <script src="./script.js"></script>
+    <script src="./services.js"></script>
 
 </body>
 
