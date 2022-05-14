@@ -126,6 +126,14 @@ window.onload = () => {
 
 if (screen.width <= 768) {
     function smoothScroll() {
+
+        const body = document.body,
+            jsScroll = document.getElementsByTagName("body"),
+            height = jsScroll.getBoundingClientRect().height - 1,
+            speed = 0.05;
+        var offset = 0;
+        body.style.height = Math.floor(height) + "px";
+
         offset += (window.pageYOffset - offset) * speed;
         var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
         jsScroll.style.transform = scroll1;
@@ -136,5 +144,5 @@ if (screen.width <= 768) {
         console.log(offset);
         raf = requestAnimationFrame(smoothScroll);
     }
-    smoothScroll();
+    // smoothScroll();
 }

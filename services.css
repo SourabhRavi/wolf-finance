@@ -686,6 +686,24 @@ input[type="submit"] {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 70px;
     }
+
+    .js-scroll {
+        height: 100%;
+        position: static;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .js-cont {
+        position: static;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:575px) {

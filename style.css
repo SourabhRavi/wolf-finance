@@ -995,6 +995,24 @@ input[type="submit"]:hover {
         margin: 0 50px;
         flex-wrap: wrap;
     }
+
+    .js-scroll {
+        height: 100%;
+        position: static;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .js-cont {
+        position: static;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:575px) {
