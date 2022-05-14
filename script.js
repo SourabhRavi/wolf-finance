@@ -120,6 +120,7 @@ window.onload = () => {
     document.getElementById("lottie-scroll").style.opacity = "1";
     setTimeout(() => {
         document.getElementById("lottie-scroll").style.opacity = "0";
+        document.getElementById("lottie-scroll").style.display = "none";
     }, 5000);
 };
 

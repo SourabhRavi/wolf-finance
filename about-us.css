@@ -225,7 +225,7 @@ input[type="submit"]:hover {
 }
 
 .inner-heading {
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .blue-line div {
@@ -247,7 +247,7 @@ input[type="submit"]:hover {
 #about .section-heading {
     margin-bottom: 360px;
     text-align: center;
-    letter-spacing: 20px;
+    letter-spacing: 0.03em;
     margin-top: 120px;
     margin-bottom: 100px;
 }
@@ -585,5 +585,142 @@ input[type="submit"]:hover {
 
     #about .left {
         height: 540px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .inner-wrap {
+        max-width: 640px;
+    }
+
+    #navbar-wrap {
+        padding: 10px 0;
+        margin: 0 50px;
+    }
+
+    #about .inner-wrap {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #about .left {
+        background: url("./assets/img/about-768px.png") no-repeat;
+        width: 100%;
+        min-height: 300px;
+        margin-bottom: 60px;
+    }
+
+    #about .right {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #about .blue-line {
+        width: 500px;
+    }
+
+    .footer-wrap {
+        margin: 0 50px;
+        flex-wrap: wrap;
+    }
+
+    #footer .brand {
+        flex-basis: 30%;
+        width: 30%;
+    }
+
+    #footer .nav-links {
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    #footer .nav-link-item {
+        transition: all .3s;
+        padding: 10px 0;
+    }
+
+    #footer .contact-wrap {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #footer .contact-wrap .instagram {
+        padding: 5px 0 0 0;
+    }
+
+    .footer-wrap {
+        margin: 0 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #navbar-wrap {
+        padding: 10px 0;
+        margin: 0 40px;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    .nav-hamburger {
+        width: 40px;
+    }
+
+    #navbar ul a {
+        font-size: 32px;
+    }
+
+    #about .section-heading {
+        font-size: 35.91px;
+        line-height: 56px;
+    }
+
+    .inner-wrap {
+        max-width: 360px;
+    }
+
+    #about .blue-line {
+        width: 190px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .inner-heading {
+        margin-bottom: 30px;
+    }
+
+    #about .blue-line div {
+        top: -50px;
+    }
+
+    #footer .brand {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer .nav-links {
+        flex-basis: 100%;
+    }
+
+    #footer .contact-wrap {
+        align-items: flex-start;
+    }
+
+    .brand svg {
+        width: 110px;
+    }
+
+    .brand svg {
+        width: 110px;
+    }
+
+    #footer * {
+        font-size: 16px;
     }
 }

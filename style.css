@@ -47,6 +47,7 @@ body {
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
+    box-sizing: border-box;
     scrollbar-width: auto;
     scrollbar-color: #8f54a0 #ffffff;
 }
@@ -169,6 +170,10 @@ img {
 
 .blue-text {
     color: #5552F1;
+}
+
+.mobile {
+    display: none;
 }
 
 input[type="button"],
@@ -620,6 +625,7 @@ input[type="submit"]:hover {
     background: #f7f7f7;
     padding: 60px 0;
     height: max-content;
+    width: 100%;
 }
 
 #footer .brand svg path {
@@ -639,7 +645,6 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     margin: 0 100px;
-
 }
 
 #footer .nav-links {
@@ -889,6 +894,11 @@ input[type="submit"]:hover {
         max-width: 640px;
     }
 
+    #navbar-wrap {
+        padding: 10px 0;
+        margin: 0 50px;
+    }
+
     #about .inner-wrap {
         height: 100%;
         flex-direction: column;
@@ -951,10 +961,253 @@ input[type="submit"]:hover {
         width: 640px;
     }
 
+    .footer-wrap {
+        margin: 0 50px;
+        flex-wrap: wrap;
+    }
+
+    #footer .brand {
+        flex-basis: 30%;
+        width: 30%;
+    }
+
+    #footer .nav-links {
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    #footer .nav-link-item {
+        transition: all .3s;
+        padding: 10px 0;
+    }
+
+    #footer .contact-wrap {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #footer .contact-wrap .instagram {
+        padding: 5px 0 0 0;
+    }
+
+    .footer-wrap {
+        margin: 0 50px;
+        flex-wrap: wrap;
+    }
 }
 
-@media only screen and (max-width:575px) {}
+@media only screen and (max-width:575px) {
+    #heading-wrap .heading {
+        font-size: 40.55px;
+        line-height: 58px;
+    }
 
-@media only screen and (max-width:435px) {}
+    .nav-hamburger {
+        width: 40px;
+    }
 
-@media only screen and (max-width:1200px) {}
+    #navbar ul a {
+        font-size: 32px;
+    }
+
+    #heading-wrap .blue-text {
+        padding: 0px 15px;
+    }
+
+    .game {
+        font-size: 105px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #heading-wrap .heading {
+        width: 80%;
+        margin: 0 auto 70px;
+    }
+
+    .right svg {
+        width: 70%;
+    }
+
+    .right {
+        right: -430px;
+    }
+
+    input[type="button"],
+    input[type="submit"] {
+        height: 62px;
+        font-size: 23px;
+        padding: 0 50px;
+    }
+
+    #brand-top img {
+        width: 120px;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    #navbar-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #navbar-bottom .nav-item {
+        flex-basis: 50%;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #navbar-bottom .nav-item:nth-child(2),
+    #navbar-bottom .nav-item:nth-child(4) {
+        text-align: right;
+    }
+
+    #hero svg {
+        pointer-events: none;
+    }
+
+    #lottie-scroll {
+        display: none;
+    }
+
+    #about .section-heading,
+    #trading .section-heading,
+    #stock-market .section-heading,
+    #services .section-heading {
+        font-size: 35.91px;
+        line-height: 56px;
+        margin: 350px auto;
+        width: 70%;
+        text-align: center;
+    }
+
+    #about .section-heading {
+        width: 60%;
+    }
+
+    .inner-wrap {
+        max-width: 360px;
+    }
+
+    #about .blue-line {
+        width: 190px;
+    }
+
+    #trading .blue-line {
+        width: 190px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .inner-heading {
+        margin-bottom: 30px;
+    }
+
+    #about .blue-line div {
+        top: -50px;
+    }
+
+    #trading .blue-line div {
+        top: -45px;
+    }
+
+    #trading .blue-line {
+        width: 160px;
+    }
+
+    #stock-market .section-heading {
+        width: 80%;
+    }
+
+    #stock-market .description.card {
+        height: max-content;
+    }
+
+    #stock-market .card-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #stock-market .card-item {
+        justify-content: center;
+        height: 250px;
+    }
+
+    #stock-market .card-item .heading {
+        margin-bottom: 20px;
+    }
+
+    #cta .heading.one {
+        font-size: 35.21px;
+        line-height: 60px;
+    }
+
+    #cta .heading.two {
+        font-size: 28.6996px;
+        line-height: 45px;
+    }
+
+    #services .section-heading {
+        width: 60%;
+    }
+
+    #services .card-item {
+        max-width: 360px;
+        padding: 50px 40px 70px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    #services .description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 35px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #services .card-item .heading {
+        font-size: 20px;
+    }
+
+    #trading .right {
+        background: url("./assets/img/trading.png") no-repeat;
+        background-size: cover;
+    }
+
+    #footer .brand {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer .nav-links {
+        flex-basis: 100%;
+    }
+
+    #footer .contact-wrap {
+        align-items: flex-start;
+    }
+
+    .brand svg {
+        width: 110px;
+    }
+
+    #footer * {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:425px) {}
+
+@media only screen and (max-width:375px) {}
+
+@media only screen and (max-width:320px) {}

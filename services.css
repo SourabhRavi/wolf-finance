@@ -610,3 +610,188 @@ input[type="submit"] {
         font-size: 26px;
     }
 }
+
+@media only screen and (max-width:768px) {
+    .inner-wrap {
+        width: 640px;
+    }
+
+    #navbar-wrap {
+        padding: 10px 0;
+        margin: 0 50px;
+    }
+
+    .footer-wrap {
+        margin: 0 50px;
+        flex-wrap: wrap;
+    }
+
+    #footer .brand {
+        flex-basis: 30%;
+        width: 30%;
+    }
+
+    #footer .nav-links {
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    #footer .nav-link-item {
+        transition: all .3s;
+        padding: 10px 0;
+    }
+
+    #footer .contact-wrap {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #footer .contact-wrap .instagram {
+        padding: 5px 0 0 0;
+    }
+
+    #services .card-wrap {
+        flex-wrap: wrap;
+    }
+
+    #services .input-wrap {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #services .card-item {
+        margin-top: 60px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #services .card-item li {
+        width: 100%;
+    }
+
+    .detail-features ul li {
+        padding: 10px 0;
+    }
+
+    .overlay {
+        bottom: 2100px;
+    }
+
+    input[type="submit"] {
+        margin: 50px auto 0;
+    }
+
+    .detail-features ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 70px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .inner-wrap {
+        width: 360px;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    .game {
+        font-size: 116px;
+    }
+
+    #navbar ul a {
+        font-size: 32px;
+    }
+
+    .nav-hamburger {
+        width: 40px;
+    }
+
+    input[type="button"],
+    input[type="submit"] {
+        height: 62px;
+        font-size: 23px;
+        padding: 0 50px;
+    }
+
+    #trading .section-heading,
+    #services .section-heading {
+        font-size: 35.91px;
+        line-height: 63px;
+        text-align: center;
+    }
+
+    #services .card-item {
+        max-width: 360px;
+        padding: 50px 40px 70px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #services .description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 35px;
+        margin: 0 auto;
+    }
+
+    #services .section-heading {
+        width: 60%;
+        margin: 0 auto 55px;
+        line-height: 52px;
+    }
+
+    #services #wolf-form {
+        padding: 50px 40px 70px;
+    }
+
+    #footer .brand {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer .nav-links {
+        flex-basis: 100%;
+    }
+
+    #footer .contact-wrap {
+        align-items: flex-start;
+    }
+
+    #services .card-item.no-padding {
+        padding: 0;
+    }
+
+    #services .card-item li {
+        font-size: 18px;
+    }
+
+    #services .section-heading.main {
+        width: 100%;
+    }
+
+    .overlay {
+        bottom: 2750px;
+    }
+
+    .detail-features ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 70px;
+        font-size: 18px;
+    }
+
+    .brand svg {
+        width: 110px;
+    }
+
+    .brand svg {
+        width: 110px;
+    }
+
+    #footer * {
+        font-size: 16px;
+    }
+}
