@@ -102,6 +102,8 @@ document.getElementById('home-nav').addEventListener('click', () => {
     });
 });
 
+
+
 document.getElementById('home-nav-top').addEventListener('click', () => {
     scrollTo({
         top: 0,
@@ -112,4 +114,8 @@ document.getElementById('home-nav-top').addEventListener('click', () => {
 
 window.onload = () => {
     document.body.style.opacity = "1";
+    document.getElementById("lottie-scroll").style.opacity = "1";
+    setTimeout(() => {
+        document.getElementById("lottie-scroll").style.opacity = "0";
+    }, 5000);
 };

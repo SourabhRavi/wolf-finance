@@ -186,7 +186,7 @@ input[type="submit"] {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    background-image: linear-gradient(to right, #181818 0%, #181818 50%, #5552F1 50%, #5552F1 100%);
+    background-image: linear-gradient(to right, #121212 0%, #121212 50%, #5552F1 50%, #5552F1 100%);
     background-repeat: no-repeat;
     background-position: -410px 0;
     background-size: 780px 90px;

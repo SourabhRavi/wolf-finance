@@ -29,6 +29,9 @@
     <link rel="icon" href="./img/favicon-light.png" media="(prefers-color-scheme:light)">
     <link rel="icon" href="./img/favicon-dark.png" media="(prefers-color-scheme:dark)">
 
+    <!-- lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </head>
 
 <body>
@@ -48,12 +51,15 @@
                 <!-- <div class="overlay bg-grey">
                         </div> -->
                 <div id="brand-top" class="brand">
-                    <a href="/" class="brand-link"><img src="./assets/img/brand-logo.svg" alt="Wolf Finance"></a>
+                    <a href="/" class="brand-link nav-link"><img src="./assets/img/brand-logo.svg" alt="Wolf Finance"></a>
                 </div>
                 <div id="heading-wrap">
                     <p class="heading">EAT. SLEEP.<br><span class="blue-text game" id="trade">TRADE.</span>REPEAT.</p>
-                    <input type="button" class="" value="Register Now">
+                    <a class="nav-link" href="/services.html"><input type="button" class="" value="Register Now"></a>
                 </div>
+
+                <lottie-player  id="lottie-scroll" src="https://assets8.lottiefiles.com/packages/lf20_P4RBQZ.json" background="transparent" speed="1" loop autoplay></lottie-player>
+
                 <div id="navbar-bottom">
                     <div class="nav-item">
                         <p onclick="scrollTop" id="home-nav-top" class="active nav-link-item">Home</p>
@@ -179,8 +185,8 @@
                 <div class="inner-wrap">
                     <div class="content-wrap">
                         <p class="heading one">Grab the opportunity</p>
-                        <p class="heading two">Open a Free Demat Account Today!</p>
-                        <a href="/services.html" class="nav-link"><input type="button" class="" value="Get Started"></a>
+                        <p class="heading two">Open a Free Demat Account Today</p>
+                        <a href="/services.html" class="nav-link"><input type="button" class="" value="Get Started!"></a>
                     </div>
                 </div>
             </section>
