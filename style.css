@@ -56,6 +56,7 @@ body {
     opacity: 0;
     transition: all .5s;
     position: absolute;
+    left: 40vw;
     top: 700px;
 }
 
@@ -617,8 +618,8 @@ input[type="submit"]:hover {
 /* footer section */
 #footer {
     background: #f7f7f7;
-    height: 180px;
     padding: 60px 0;
+    height: max-content;
 }
 
 #footer .brand svg path {
@@ -745,11 +746,212 @@ input[type="submit"]:hover {
     }
 }
 
-@media only screen and (max-width:1200px) {}
+@media only screen and (max-width:1200px) {
+    .right {
+        right: -200px;
+        top: -230px;
+    }
 
-@media only screen and (max-width:992px) {}
+    .left {
+        left: -250px;
+        top: 60vh;
+    }
 
-@media only screen and (max-width:768px) {}
+    #about .blue-line {
+        width: 420px;
+    }
+
+    #heading-wrap .heading {
+        font-size: 65.55px;
+        line-height: 98px;
+    }
+
+    #heading-wrap .blue-text {
+        padding: 25px;
+    }
+
+    .game {
+        font-size: 175px;
+    }
+
+    .inner-wrap {
+        max-width: 1040px;
+    }
+
+    #about .right {
+        flex-basis: 544px
+    }
+
+    #trading .left {
+        flex-basis: 544px;
+    }
+
+    #stock-market .card-item {
+        padding: 30px;
+    }
+
+    #stock-market .card-item .heading {
+        font-size: 38.91px;
+    }
+
+    #stock-market .card-item {
+        justify-content: flex-end;
+    }
+
+    #stock-market .description.card {
+        height: 100px;
+    }
+
+    #services .card-item {
+        width: 1017px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .left {
+        left: -300px;
+        top: 55vh;
+    }
+
+    #lottie-scroll {
+        top: 720px;
+    }
+
+    .section-heading {
+        font-size: 55.91px;
+    }
+
+    #about .section-heading {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+
+    .inner-wrap {
+        max-width: 880px;
+    }
+
+    #about .right {
+        flex-basis: 474px;
+    }
+
+    #about .blue-line {
+        width: 340px;
+    }
+
+    #trading .section-heading {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+
+    #trading .left {
+        flex-basis: 474px;
+    }
+
+    #trading .blue-line {
+        width: 30px;
+    }
+
+    #trading .right {
+        background: url(./assets/img/trading-992px.png) no-repeat;
+    }
+
+    #stock-market .card-wrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+    }
+
+    #stock-market {
+        padding-bottom: 310px;
+    }
+
+    #services .card-item {
+        width: 840px;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .right {
+        right: -320px;
+    }
+
+    .left {
+        left: -300px;
+        top: 65vh;
+    }
+
+    #heading-wrap .heading {
+        font-size: 60.55px;
+        line-height: 88px;
+    }
+
+    .inner-wrap {
+        max-width: 640px;
+    }
+
+    #about .inner-wrap {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #about .left {
+        background: url("./assets/img/about-768px.png") no-repeat;
+        width: 100%;
+        min-height: 300px;
+        margin-bottom: 60px;
+    }
+
+    #about .right {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #about .blue-line {
+        width: 500px;
+    }
+
+    #trading .inner-wrap {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    #trading .right {
+        background: url("./assets/img/trading-768px.png") no-repeat;
+        width: 100%;
+        min-height: 300px;
+        margin-bottom: 60px;
+    }
+
+    #trading .right {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #trading .blue-line {
+        width: 460px;
+        left: unset;
+        right: 0;
+    }
+
+    #stock-market .section-heading {
+        width: 80%;
+        margin: 0 auto 120px;
+    }
+
+    #cta .heading.one {
+        font-size: 45.21px;
+        line-height: 65px;
+    }
+
+    #cta .heading.two {
+        font-size: 30.6996px;
+    }
+
+    #services .card-item {
+        width: 640px;
+    }
+
+}
 
 @media only screen and (max-width:575px) {}
 

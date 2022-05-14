@@ -554,3 +554,59 @@ input[type="submit"] {
     color: #d7d7d7;
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 1440px) {
+    .section-heading {
+        font-size: 55.91px;
+    }
+
+    #services {
+        margin-top: 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 55px;
+    }
+
+    #services {
+        margin-bottom: 140px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .inner-wrap {
+        max-width: 1040px;
+    }
+
+    #services .input-wrap {
+        flex-basis: 45%;
+    }
+
+    .detail-features ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 150px;
+    }
+
+    #services .card-wrap {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #services .card-item li {
+        width: 370px;
+    }
+
+    .inner-wrap {
+        max-width: 880px;
+    }
+
+    .overlay {
+        bottom: 1600px;
+        left: -190px;
+    }
+
+    #services .description {
+        font-size: 26px;
+    }
+}

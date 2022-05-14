@@ -71,19 +71,22 @@ var offset = 0;
 
 body.style.height = Math.floor(height) + "px";
 
-function smoothScroll() {
-    offset += (window.pageYOffset - offset) * speed;
-    var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
-    jsScroll.style.transform = scroll1;
+if (screen.width > 768) {
+    function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
+        var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
+        jsScroll.style.transform = scroll1;
 
-    setTranslate(offset * 0.2 - 300, aboutImg);
-    setTranslate(offset * 0.2 - 800, tradingImg);
-    setTranslate(offset * 0.2 - 1000, ctaImg);
-    console.log(offset);
-    raf = requestAnimationFrame(smoothScroll);
+        setTranslate(offset * 0.2 - 300, aboutImg);
+        setTranslate(offset * 0.2 - 800, tradingImg);
+        setTranslate(offset * 0.2 - 1000, ctaImg);
+        console.log(offset);
+        raf = requestAnimationFrame(smoothScroll);
+    }
+    smoothScroll();
 }
 
-smoothScroll();
+
 
 // page transition
 let about = document.querySelectorAll(".nav-link");
@@ -119,3 +122,18 @@ window.onload = () => {
         document.getElementById("lottie-scroll").style.opacity = "0";
     }, 5000);
 };
+
+if (screen.width <= 768) {
+    function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
+        var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
+        jsScroll.style.transform = scroll1;
+
+        setTranslate(offset * 0.2 - 300, aboutImg);
+        setTranslate(offset * 0.2 - 800, tradingImg);
+        setTranslate(offset * 0.2 - 1500, ctaImg);
+        console.log(offset);
+        raf = requestAnimationFrame(smoothScroll);
+    }
+    smoothScroll();
+}
