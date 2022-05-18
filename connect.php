@@ -23,7 +23,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO design_partner (name,phone,email,service)
+$sql = "INSERT INTO leads (name,phone,email,service)
 VALUES ('$name', '$phone', '$email', '$service')";
 
 if ($conn->query($sql) === TRUE) {

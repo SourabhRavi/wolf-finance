@@ -134,7 +134,7 @@
                         <a id="services-footer-link" class="nav-link-item nav-link" href="/services.html">Services</a>
                     </div>
                     <div class="contact-wrap">
-                        <a class="heading nav-link nav-link-item" href="/contact-us.html">Contact Us</a>
+                        <a id="contact-footer-link" class="heading nav-link nav-link-item" href="/contact-us.html">Contact Us</a>
                         <a href="mailto:connect@wolffinance.in" class="mail">connect@wolffinance.in</a>
                         <a href="#" class="instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -167,137 +167,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
     <!-- user js -->
-    <script>
-        // hero section height equal to screen height
-        window.addEventListener("resize", () => {
-            var hero = document.querySelector("#hero");
-            var heroHeight = window.innerHeight;
-            hero.style.height = heroHeight + "px";
-        });
-
-        function setTranslate(yPos, el) {
-            el.style.backgroundPosition = `0px ${yPos - 100}px`;
-        }
-
-        var aboutImg = document.querySelector("#about-img");
-
-        document.addEventListener("mousemove", (e) => {
-            if (e.clientX > window.innerWidth - 20) {
-                document.querySelector("html").classList.add("active-scrollbar");
-            } else {
-                document.querySelector("html").classList.remove("active-scrollbar");
-            }
-        });
-
-        gsap.set("#circle", { xPercent: -20, yPercent: -20 });
-
-        const ball = document.querySelector("#circle");
-        const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-        const mouse = { x: pos.x, y: pos.y };
-        const speed2 = 0.35;
-
-        const xSet = gsap.quickSetter(ball, "x", "px");
-        const ySet = gsap.quickSetter(ball, "y", "px");
-
-        window.addEventListener("mousemove", (e) => {
-            mouse.x = e.x;
-            mouse.y = e.y;
-        });
-
-        gsap.ticker.add(() => {
-            // adjust speed2 for higher refresh monitors
-            const dt = 1.0 - Math.pow(1.0 - speed2, gsap.ticker.deltaRatio());
-
-            pos.x += (mouse.x - pos.x) * dt;
-            pos.y += (mouse.y - pos.y) * dt;
-            xSet(pos.x);
-            ySet(pos.y);
-        });
-
-        const body = document.body,
-            jsScroll = document.getElementsByClassName("js-scroll")[0],
-            height = jsScroll.getBoundingClientRect().height - 1,
-            speed = 0.05;
-
-        var offset = 0;
-
-        body.style.height = Math.floor(height) + "px";
-
-        if (screen.width <= 768) {
-            function smoothScroll() {
-                offset += (window.pageYOffset - offset) * speed;
-                var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
-                jsScroll.style.transform = scroll1;
-
-                setTranslate(offset * 0.2 - 100, aboutImg);
-                console.log(offset);
-                raf = requestAnimationFrame(smoothScroll);
-            }
-
-            smoothScroll();
-        }
-
-        // page transition
-        let about = document.querySelectorAll(".nav-link");
-
-        for (let i = 0; i < about.length; i++) {
-            about[i].addEventListener("click", () => {
-                document.body.style.opacity = "0";
-            });
-        }
-
-        document.getElementById('about-footer-link').addEventListener('click', () => {
-            scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        });
-
-        window.onload = () => {
-            document.body.style.opacity = "1";
-        };
-
-        // hamburger menu icon animation
-        $(document).ready(function () {
-            $("#nav-hamburger").click(function () {
-                $(this).toggleClass("open");
-            });
-        });
-
-        // navbar toggler
-        let navItem = document.getElementsByClassName("nav-item");
-        for (let i = 0; i < navItem.length; i++) {
-            navItem[i].addEventListener("click", () => {
-                if (parseInt(window.innerWidth) > 0) {
-                    document.getElementById("nav-hamburger").classList.remove("open");
-                    document.getElementById("hamburger-wrap").click();
-                }
-            });
-        }
-
-        if (screen.width <= 768) {
-            function smoothScroll() {
-
-                const body = document.body,
-                    jsScroll = document.getElementsByTagName("body"),
-                    height = jsScroll.getBoundingClientRect().height - 1,
-                    speed = 0.05;
-                var offset = 0;
-                body.style.height = Math.floor(height) + "px";
-
-                offset += (window.pageYOffset - offset) * speed;
-                var scroll1 = "translateY(-" + offset + "px) translateZ(0) ";
-                jsScroll.style.transform = scroll1;
-
-                setTranslate(offset * 0.2 - 300, aboutImg);
-                setTranslate(offset * 0.2 - 800, tradingImg);
-                setTranslate(offset * 0.2 - 1500, ctaImg);
-                console.log(offset);
-                raf = requestAnimationFrame(smoothScroll);
-            }
-            // smoothScroll();
-        }
-    </script>
+    <script src="./about.js"></script>
 </body>
 
 </html>
