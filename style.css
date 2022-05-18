@@ -1111,6 +1111,10 @@ input[type="submit"]:hover {
         width: 60%;
     }
 
+    #about .left {
+        background: url("./assets/img/about-575px.png") no-repeat;
+    }
+
     .inner-wrap {
         max-width: 360px;
     }
@@ -1200,7 +1204,7 @@ input[type="submit"]:hover {
     }
 
     #trading .right {
-        background: url("./assets/img/trading.png") no-repeat;
+        background: url("./assets/img/trading-575px.png") no-repeat;
         background-size: cover;
     }
 

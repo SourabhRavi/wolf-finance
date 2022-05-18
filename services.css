@@ -723,6 +723,10 @@ input[type="submit"] {
         font-size: 32px;
     }
 
+    #navbar-wrap {
+        margin: 0 40px;
+    }
+
     .nav-hamburger {
         width: 40px;
     }
