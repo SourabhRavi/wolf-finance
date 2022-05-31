@@ -578,6 +578,26 @@ input[type="submit"]:hover {
     margin-bottom: 60px;
 }
 
+#services .card-wrap .description {
+    font-size: 20px;
+    width: 100%;
+}
+
+#services div.features {
+    margin-top: 22px;
+}
+
+.demat-btn {
+    margin-left: 20px;
+}
+
+#services div.features .description {
+    font-size: 22px;
+    color: #909090;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
 #services input[type="button"] {
     color: #5552F1;
     height: 66px;
@@ -605,10 +625,14 @@ input[type="submit"]:hover {
     margin-bottom: 100px;
 }
 
-#services .card-item li {
+#services .card-item .feature-item {
     color: #909090;
     margin-bottom: 25px;
     padding-left: 10px;
+}
+
+#services .card-item.two .feature-item {
+    padding-left: 0;
 }
 
 #services .card-item ul {
@@ -1015,6 +1039,14 @@ input[type="submit"]:hover {
         position: static;
         height: 100%;
     }
+
+    .demat-btn {
+        margin-left: 0;
+    }
+
+    .demat-btn input {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width:575px) {
@@ -1188,6 +1220,16 @@ input[type="submit"]:hover {
         padding: 50px 40px 70px;
         font-size: 17px;
         line-height: 26px;
+    }
+
+    #services input[type="button"] {
+        padding: 0 40px;
+        font-size: 18px;
+    }
+
+    #services .card-wrap .secondary-heading.description {
+        font-size: 18px;
+        line-height: 30px;
     }
 
     #services .description {
